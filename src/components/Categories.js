@@ -10,11 +10,14 @@ function Categories({ setActiveCategory, categories, activeCategory }) {
       >
         <option value="">---</option>
         {categories.map((cat) => (
-          <option key={cat}>{cat}</option>
+          <option key={cat} value={cat}>
+            {cat}
+          </option>
         ))}
       </select>
       <button onClick={() => setActiveCategory("")}>Réinitialiser</button>
     </div>
   );
 }
+
 export default Categories;
