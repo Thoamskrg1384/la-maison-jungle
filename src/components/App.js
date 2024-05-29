@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Banner from "./Banner";
 import logo from "../assets/logo.png";
 import Cart from "./Cart";
@@ -8,7 +8,6 @@ import "../styles/Layout.css";
 
 function App() {
   const [cart, updateCart] = useState([]);
-
   return (
     <div>
       <Banner>

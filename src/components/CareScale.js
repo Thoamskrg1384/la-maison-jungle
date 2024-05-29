@@ -3,7 +3,7 @@ import Water from "../assets/water.svg";
 
 const quantityLabel = {
   1: "peu",
-  2: "modérement",
+  2: "modérément",
   3: "beaucoup",
 };
 
@@ -21,7 +21,7 @@ function CareScale({ scaleValue, careType }) {
       onClick={() =>
         alert(
           `Cette plante requiert ${quantityLabel[scaleValue]} ${
-            careType === "light" ? "de lumiere" : "d'arrosage"
+            careType === "light" ? "de lumière" : "d'arrosage"
           }`
         )
       }
